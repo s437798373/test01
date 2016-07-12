@@ -19,5 +19,11 @@
         android:layout_height="60dp"
         android:text="测试"
         android:layout_width="match_parent"/>
+    <Button 
+        android:layout_below="@id/test"
+        android:id="@+id/bt2"
+        android:layout_height="60dp"
+        android:text="haha"
+        android:layout_width="match_parent"/>
 
 </RelativeLayout>

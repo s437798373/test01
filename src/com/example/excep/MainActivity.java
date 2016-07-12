@@ -10,19 +10,19 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 	TextView tv;
+	Button bt2;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		MyApplication.getInstance().addActivity(this);
 		 tv =(TextView) findViewById(R.id.test);
+		 bt2 = (Button) findViewById(R.id.bt2);
 		Button bt = (Button) findViewById(R.id.bt);
 		bt.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-				Log.e("tag", "----µË×ÓÇÅÊÇÉµ±Æ-");
-				tv.setText(1);
 			}
 		});
 	}
