@@ -2,10 +2,12 @@ package com.example.excep;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnClickListener {
 	TextView tv;
 	Button bt,bt2;
 	@Override
@@ -13,8 +15,13 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		MyApplication.getInstance().addActivity(this);
-		bt = (Button) findViewById(R.id.bt);
-		bt2 = (Button) findViewById(R.id.bt2);
+		bt.setOnClickListener(this);
+		bt2.setOnClickListener(this);
 		System.out.println("fdsafd");
+	}
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
 	}
 }
