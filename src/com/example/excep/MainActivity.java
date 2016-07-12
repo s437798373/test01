@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				Log.e("tag", "----hahhaha-");
+				Log.e("tag", "----hehehe-");
 				tv.setText(1);
 			}
 		});
