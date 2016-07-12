@@ -16,7 +16,6 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		MyApplication.getInstance().addActivity(this);
-		 bt2 = (Button) findViewById(R.id.bt2);
 		Button bt = (Button) findViewById(R.id.bt);
 		bt.setOnClickListener(new OnClickListener() {
 			
